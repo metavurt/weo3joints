@@ -55,18 +55,18 @@ While JointsWP enables different forms of management for its theme, WEO3Joints w
 
 ### Gulp Tasks
 #### Watching Files for Changes
-Running gulp watch will watch your assets/js/scripts and assets/sass directories for any changes and automatically run the related tasks.
+Running *gulp watch* will watch your **assets/js/scripts** and **assets/scss** directories for any changes and automatically run the related tasks.
 
 #### Compiling Sass
-Running gulp styles will compile all of your Sass files from your assets/sass directory into the assets/css directory. It will create a minified and non-minified file – by default, the theme will enqueue the non-minified file.
+Running *gulp styles* will compile all of your Sass files from your **assets/sass** directory into the **assets/css** directory. It will create a minified and non-minified file – by default, the theme will enqueue the non-minified file.
 
 #### Compiling Custom JavaScript
-Running gulp site-js will combine all of your custom (non-Foundation) JavaScript files from your assets/js/scripts directory into one file in the assets/js directory.
+Running gulp site-js will combine all of your custom (non-Foundation) JavaScript files from your **assets/js/scripts** directory into one file in the **assets/js** directory.
 
-Running this task will create a minified and non-minified file – by default, the theme will enqueue the non-minified file.
+Running this task will create a *minified* and *non-minified* file – by default, the theme will enqueue the non-minified file.
 
 #### Compiling Foundation
-Running gulp foundation-js will compile all of your Foundation JavaScript files from your vendor/foundation/js/ directory into the assets/js/min directory. It will create a minified and non-minified file – by default, the theme will enqueue the minified file.
+Running gulp foundation-js will compile all of your Foundation JavaScript files from your **vendor/foundation/js/** directory into the **assets/js/min** directory. It will create a minified and non-minified file – by default, the theme will enqueue the minified file.
 
 The gulpfile.js allows you to easily select which Foundation files you want to use. By default all Foundation components are loaded.
 
