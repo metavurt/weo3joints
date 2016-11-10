@@ -73,7 +73,7 @@ Running gulp foundation-js will compile all of your Foundation JavaScript files 
 
 The gulpfile.js allows you to easily select which Foundation files you want to use. By default all Foundation components are loaded.
 
-----
+~~~~
 
 gulp.task('foundation-js', function() {
   return gulp.src([ 
@@ -103,8 +103,8 @@ gulp.task('foundation-js', function() {
           './vendor/foundation-sites/js/foundation.toggler.js',
           './vendor/foundation-sites/js/foundation.tooltip.js',
   ])
-  
-  ----
+
+  ~~~~
 
 
 [1]: http://www.weo3.com "Home of WEO3 Development & Design"
