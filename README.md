@@ -72,7 +72,9 @@ Running this task will create a minified and non-minified file – by default, t
 Running gulp foundation-js will compile all of your Foundation JavaScript files from your vendor/foundation/js/ directory into the assets/js/min directory. It will create a minified and non-minified file – by default, the theme will enqueue the minified file.
 
 The gulpfile.js allows you to easily select which Foundation files you want to use. By default all Foundation components are loaded.
+
 ----
+
 gulp.task('foundation-js', function() {
   return gulp.src([ 
            
@@ -101,6 +103,7 @@ gulp.task('foundation-js', function() {
           './vendor/foundation-sites/js/foundation.toggler.js',
           './vendor/foundation-sites/js/foundation.tooltip.js',
   ])
+  
   ----
 
 
