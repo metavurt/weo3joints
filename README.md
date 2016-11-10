@@ -1,7 +1,7 @@
 Currently using Foundation 6.2.3
 
 ### What is WEO3Joints?
-WEO3Joints is a WordPress theme cloned from [JointsWP][2], which was built with [Foundation 6].
+WEO3Joints is a WordPress theme cloned from [JointsWP][2], which was built with [Foundation 6][3].
 
 This theme acts as a representative of some of the design philosophies of [WEO3 Development & Design][1], and is a parent theme for all custom child themes developed for clients of [WEO3 Development & Design][1].
 
@@ -22,7 +22,7 @@ WEO3Joints comes pre-baked with all of the great features that are found in the 
 ### What tools do I need to use WEO3Joints?
 While JointsWP enables different forms of management for its theme, WEO3Joints will move forward using Sass, npm and Gulp.
 
-### Getting Started With Gulp
+### Getting Started
 - Install [node.js](https://nodejs.org).
 - Using the command line, navigate to your theme directory
 - Run npm install
@@ -56,6 +56,54 @@ While JointsWP enables different forms of management for its theme, WEO3Joints w
 - vendor/ – All vendor files are located here. It is not recommended to make changes to these files (except when updating).
 
 
+### Gulp Tasks
+#### Watching Files for Changes
+Running gulp watch will watch your assets/js/scripts and assets/sass directories for any changes and automatically run the related tasks.
+
+#### Compiling Sass
+Running gulp styles will compile all of your Sass files from your assets/sass directory into the assets/css directory. It will create a minified and non-minified file – by default, the theme will enqueue the non-minified file.
+
+#### Compiling Custom JavaScript
+Running gulp site-js will combine all of your custom (non-Foundation) JavaScript files from your assets/js/scripts directory into one file in the assets/js directory.
+
+Running this task will create a minified and non-minified file – by default, the theme will enqueue the non-minified file.
+
+#### Compiling Foundation
+Running gulp foundation-js will compile all of your Foundation JavaScript files from your vendor/foundation/js/ directory into the assets/js/min directory. It will create a minified and non-minified file – by default, the theme will enqueue the minified file.
+
+The gulpfile.js allows you to easily select which Foundation files you want to use. By default all Foundation components are loaded.
+----
+gulp.task('foundation-js', function() {
+  return gulp.src([ 
+           
+          // Foundation core - needed if you want to use any of the components below
+          './vendor/foundation-sites/js/foundation.core.js',
+          './vendor/foundation-sites/js/foundation.util.*.js',
+           
+          // Pick the components you need in your project
+          './vendor/foundation-sites/js/foundation.abide.js',
+          './vendor/foundation-sites/js/foundation.accordion.js',
+          './vendor/foundation-sites/js/foundation.accordionMenu.js',
+          './vendor/foundation-sites/js/foundation.drilldown.js',
+          './vendor/foundation-sites/js/foundation.dropdown.js',
+          './vendor/foundation-sites/js/foundation.dropdownMenu.js',
+          './vendor/foundation-sites/js/foundation.equalizer.js',
+          './vendor/foundation-sites/js/foundation.interchange.js',
+          './vendor/foundation-sites/js/foundation.magellan.js',
+          './vendor/foundation-sites/js/foundation.offcanvas.js',
+          './vendor/foundation-sites/js/foundation.orbit.js',
+          './vendor/foundation-sites/js/foundation.responsiveMenu.js',
+          './vendor/foundation-sites/js/foundation.responsiveToggle.js',
+          './vendor/foundation-sites/js/foundation.reveal.js',
+          './vendor/foundation-sites/js/foundation.slider.js',
+          './vendor/foundation-sites/js/foundation.sticky.js',
+          './vendor/foundation-sites/js/foundation.tabs.js',
+          './vendor/foundation-sites/js/foundation.toggler.js',
+          './vendor/foundation-sites/js/foundation.tooltip.js',
+  ])
+  ----
+
+
 [1]: http://www.weo3.com "Home of WEO3 Development & Design"
 [2]: http://www.jointswp.com/ "Home of JointsWP"
-[3]: http://foundation.zurb.com/sites/ "Home of Zurb's Foundation Site repo"
+[3]: http://foundation.zurb.com/sites "Home of Zurb's Foundation: Sites"
