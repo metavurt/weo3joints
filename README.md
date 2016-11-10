@@ -8,14 +8,13 @@ JointsWP started its humble life as a fork of the popular theme Bones, and is no
 WEO3Joints simply hopes to have a life.
 
 ### What comes with WEO3Joints?
-WEO3Joints comes pre-baked with all of the great features that are found in the Foundation framework. If it works in Foundation, it will work in WEO3Joints. The theme also includes:
+WEO3Joints comes pre-baked with all of the great features that are found in the Foundation framework. If it works in Foundation, it will work in WEO3Joints. The theme also includes (but not limited to):
 
 - Foundation Navigation Options
 - Motion-UI
 - Grid archive templates
 - Translation Support
-- Bower and Gulp Support
-- And much, much more!
+- Gulp Support
 
 ### What tools do I need to use WEO3Joints?
 While JointsWP enables different forms of management for its theme, WEO3Joints will move forward using Sass, npm and Gulp.
