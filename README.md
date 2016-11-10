@@ -7,6 +7,8 @@ This theme acts as a representative of some of the design philosophies of [WEO3 
 
 JointsWP started its humble life as a fork of the popular theme Bones, and is now used by thousands of websites globally.
 
+WEO3Joints simply hopes to have a life.
+
 ### What comes with WEO3Joints?
 WEO3Joints comes pre-baked with all of the great features that are found in the Foundation framework. If it works in Foundation, it will work in WEO3Joints. The theme also includes:
 
