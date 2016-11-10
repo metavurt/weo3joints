@@ -1,7 +1,7 @@
 Currently using Foundation 6.2.3
 
 ### What is WEO3Joints?
-WEO3Joints is a WordPress theme cloned from JointsWP [(www.jointswp.com)][2], which was built with [Foundation 6].
+WEO3Joints is a WordPress theme cloned from [JointsWP][2], which was built with [Foundation 6].
 
 This theme acts as a representative of some of the design philosophies of [WEO3 Development & Design][1], and is a parent theme for all custom child themes developed for clients of [WEO3 Development & Design][1].
 
