@@ -12,7 +12,7 @@ function site_scripts() {
     wp_enqueue_script( 'site-js', get_template_directory_uri() . '/assets/js/scripts.js', array( 'jquery' ), '', true );
    
     // Register google materials icon font
-    wp_enqueue_style('googleFonts', 'https://fonts.googleapis.com/icon?family=Material+Icons', array(), '', 'all');
+    //wp_enqueue_style('googleFonts', 'https://fonts.googleapis.com/icon?family=Material+Icons', array(), '', 'all');
     
     // Register main stylesheet
     wp_enqueue_style( 'site-css', get_template_directory_uri() . '/assets/css/style.css', array(), '', 'all' );
