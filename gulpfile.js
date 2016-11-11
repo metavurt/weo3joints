@@ -1,19 +1,19 @@
 // Grab our gulp packages
-var gulp  = require('gulp'),
-    gutil = require('gulp-util'),
-    sass = require('gulp-sass'),
-    cssnano = require('gulp-cssnano'),
-    autoprefixer = require('gulp-autoprefixer'),
-    sourcemaps = require('gulp-sourcemaps'),
-    jshint = require('gulp-jshint'),
-    stylish = require('jshint-stylish'),
-    uglify = require('gulp-uglify'),
-    concat = require('gulp-concat'),
-    rename = require('gulp-rename'),
-    plumber = require('gulp-plumber'),
-    bower = require('gulp-bower'),
-    babel = require('gulp-babel'),
-    browserSync = require('browser-sync').create();
+var gulp                = require('gulp'),
+    gutil               = require('gulp-util'),
+    sass                = require('gulp-sass'),
+    cssnano             = require('gulp-cssnano'),
+    autoprefixer        = require('gulp-autoprefixer'),
+    sourcemaps          = require('gulp-sourcemaps'),
+    jshint              = require('gulp-jshint'),
+    stylish             = require('jshint-stylish'),
+    uglify              = require('gulp-uglify'),
+    concat              = require('gulp-concat'),
+    rename              = require('gulp-rename'),
+    plumber             = require('gulp-plumber'),
+    bower               = require('gulp-bower'),
+    babel               = require('gulp-babel'),
+    browserSync         = require('browser-sync').create();
 
 // Compile Sass, Autoprefix and minify
 gulp.task('styles', function() {
